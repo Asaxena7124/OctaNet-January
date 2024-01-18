@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>ToDo Web-App</title>
+    <script src="script.js"></script>
+</head>
+
+<body onload="startTime()">
+    <div class="todo-container">
+        <div class="todo-header">
+            <p class="app-name">JUST TODO IT</p>
+        </div>
+        <div class="container-body">
+            <div class="time-date">
+                <p id="ctime">12:30</p>
+                <p id="cdate">Monday, June 12</p>
+            </div>
+            <div class="todo-item">
+                <ul id="list">
+                    <!--<li>
+                       <input type="checkbox" id="done">
+                       <p id="item">Call Mumsy</p>
+                       <i class="fa fa-trash"></i>
+                   </li> 
+ -->
+                </ul>
+            </div>
+            <div class="add-item">
+                <input type="text" placeholder="type item" id="new-item">
+                <input type="button" value="ADD" id="add-button" onclick="addItem()">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
